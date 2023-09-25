@@ -1,6 +1,3 @@
-# This file runs during container build time to get model weights built into the container
-
-# In this example: A Huggingface BERT model
 import torch
 from transformers import pipeline
 from diffusers import AutoencoderKL, ControlNetModel, StableDiffusionControlNetPipeline

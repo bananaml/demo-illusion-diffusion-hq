@@ -22,6 +22,7 @@ You can fork this repository and deploy it on Banana as is, or customize it base
 ```python
 inputs = {
     "prompt" : "your_prompt",
+    "qr_code_content" : "your_qr_code_content",
     "negative_prompt": "your_negative_prompt",
     "image": "your_base64_image",
     "seed": "your_seed"

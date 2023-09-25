@@ -88,6 +88,7 @@ def generate_qrcode(qr_code_content, background, border, width, height):
 def handler(context: dict, request: Request) -> Response:
     # Parameters
     prompt = request.json.get("prompt")
+    qr_code_content = request.json.get("qr_code_content")
     negative_prompt = request.json.get("negative_prompt")
     controlnet_conditioning_scale = 1.0
     image = request.json.get("image")
@@ -97,7 +98,6 @@ def handler(context: dict, request: Request) -> Response:
     width = 768
     height = 768
     num_outputs = 1
-    qr_code_content = "https://catacolabs.com"
     # Model
     pipe = context.get("pipe")
     # Seed
